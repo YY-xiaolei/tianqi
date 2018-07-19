@@ -1,0 +1,112 @@
+@import url('base.css');
+/*头部开始*/
+body{
+	background: #f5f5f5;
+}
+header{
+	width: 100%;
+	height: 13.77rem;
+	/*谷歌内核 -webkit-*/
+	background:url("../img/screen.png") no-repeat bottom/contain,-webkit-linear-gradient(top,#3bbcff,#47eaff);
+	/*火狐内核 -moz-*/
+	background:-moz-linear-gradient(top,#3bbcff,#47eaff);
+	/*ie内核 -ms-*/
+	background:-ms-linear-gradient(top,#3bbcff,#47eaff);
+	/*欧鹏内核 -o-*/
+	background:-o-linear-gradient(top,#3bbcff,#47eaff);
+	/*标准语法*/
+	background:linear-gradient(top,#3bbcff,#47eaff);
+}
+header .city{
+	height: 1.58rem;
+	/*指定为弹性布局*/
+	display: flex;
+	/*子元素在水平方向的对齐方式 居中对齐*/
+	justify-content: center;
+	/*子元素在垂直方向的对齐方式 居中对齐*/
+	align-items: center;
+}
+header i,header span{
+	font-size: 0.52rem;
+	color: #fff;
+}
+header i{
+	margin-right: 0.18rem;
+}
+/*空气质量*/
+.air-quality{
+	width: 2.1rem;
+	height: 1.26rem;
+	background: #f1ab62;
+	border-radius: 0.19rem;
+	/* margin-top:0.16rem;
+	margin-left: 0.27rem; */
+	margin:0.16rem 0 0 0.27rem;
+}
+.air-quality span{
+    font-size: 0.3rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 0.6rem;
+}
+.air-quality .quality{
+	font-size: 0.36rem;
+}
+/*温度*/
+.temperature{
+	font-size: 1.28rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.74rem;
+	margin-top: 0.29rem;
+}
+/*头部结束*/
+
+/*未来24小时开始*/
+.recent-hours{
+	width: 100%;
+	height: 3.9rem;
+	border-top:0.03rem solid #e4e4e4;
+	border-bottom:0.03rem solid #e4e4e4;
+	box-sizing: border-box;
+	background: #fff;
+	/*超出部分在x方向的表现形式
+	auto:自动;如果超出自动以滚动条的形式显示*/
+	overflow-x:auto;
+}
+.recent-hours ul{
+	display: flex;
+	height: 100%;
+	padding-top: 0.88rem;
+	box-sizing: border-box;
+}
+/*去掉滚动条*/
+.recent-hours::-webkit-scrollbar{
+	height: 0;
+}
+.con{
+	width: 1.97rem;
+	height: 2.15rem;
+	background: red;
+	/*即使空间不足，子元素不缩小*/
+	flex-shrink: 0;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.recent-time,.recent-temperature{
+	color: #fff;
+	font-size: 0.24rem;
+	text-align: center;
+}
+.recent-icon{
+	width: 0.65rem;
+	height: 0.65rem;
+	background: url(../img/0.png) no-repeat center;
+	background-size: 100% 100%;
+    margin:0 auto;
+}
+/*未来24小时结束*/
+
